@@ -95,8 +95,7 @@ async function handleWebsiteIcon(host: string): Promise<Response> {
   const fallbackHost = encodeURIComponent(normalizedHost);
   const upstreamSources: Array<{ url: string; headers?: HeadersInit }> = [
     {
-      url: `https://favicon.im/${fallbackHost}`,
-      headers: { 'User-Agent': 'NodeWarden/1.0' },
+      url: `https://icons.bitwarden.net/${fallbackHost}/icon.png`,
     },
     {
       url: `https://icons.duckduckgo.com/ip3/${fallbackHost}.ico`,
